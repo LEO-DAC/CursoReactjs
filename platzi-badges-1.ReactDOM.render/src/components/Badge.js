@@ -12,13 +12,13 @@ class Badge extends React.Component{
                     
                     <img 
                     className="badge_avatar"
-                    src="https://media-exp1.licdn.com/dms/image/C5603AQGX0Cj2fsJwBA/profile-displayphoto-shrink_800_800/0/1575680174840?e=1626912000&v=beta&t=OPaCbjqzt0obc8Sep3Bn_fOQA47eP7NneDl1kmqJ8v0" height="200px" />
-                    <h1>Leonardo Daniel<br /> Alonso Cepeda</h1>
+                    src={this.props.avatarUrl} height="200px" />
+                    <h1>Leonardo Daniel<br />{this.props.lastName}</h1>
             </div>
 
              <div className="badge_section-info">
-                 <h3>Frontend Engineer</h3>
-                 <div>@leodac</div>
+                 <h3>{this.props.jobTitle}</h3>
+                 <div>@{this.props.twitter}</div>
              </div>
 
              <div className="badge_footer">
